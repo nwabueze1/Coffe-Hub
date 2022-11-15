@@ -1,0 +1,158 @@
+:root {
+  --color-primary: #007b0c;
+  --color-dark: #000000;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list--inline > li {
+  display: inline-block;
+  margin-left: 82px;
+}
+
+.list--inline > li > a {
+  text-decoration: none;
+  color: inherit;
+  transition: all ease-in 0.5s;
+}
+
+.list--inline > li > a:hover {
+  color: var(--color-primary);
+}
+.active {
+  border-bottom: 2px solid var(--color-primary);
+}
+
+/* Logo */
+.logo {
+  height: 90px;
+  width: 90px;
+  fill: var(--color-primary);
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.container {
+  max-width: 1548px;
+  margin: 0 auto;
+}
+
+/* Grid--Section */
+.grid {
+  display: grid;
+}
+
+.grid--1x2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.relative {
+  position: relative;
+}
+
+.trim {
+  overflow-y: hidden;
+}
+/*Blocks */
+.block {
+  padding: 6rem 0;
+}
+
+.heading {
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.heading > span {
+  font-weight: 900;
+  color: var(--color-primary);
+  color: #007b0c;
+}
+
+.welcome-text {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: "Prompt";
+  color: #4d4d4d;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 31px 81px;
+  background: #007b0c;
+  border-radius: 70px;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px auto 0;
+}
+
+/* Ellipse */
+.ellipse {
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  left: 900px;
+  top: 150px;
+  border-radius: 100%;
+  background: #007b0c;
+  z-index: -1;
+}
+
+.image {
+  z-index: 1;
+  filter: drop-shadow(30px 40px 50px rgba(0, 0, 0, 0.2));
+  position: relative;
+  top: -120px;
+}
+.absolute {
+  position: absolute;
+  top: 20%;
+  right: -5px;
+}
+.icon--white {
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  margin: 22px 0;
+}
